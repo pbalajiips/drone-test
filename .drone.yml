@@ -8,3 +8,5 @@ pipeline:
     image: alpine:latest
     commands:
       - env
+    secrets: [ docker_username, docker_password ]
+    
