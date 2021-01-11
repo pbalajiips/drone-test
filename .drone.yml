@@ -3,3 +3,8 @@ pipeline:
     image: alpine:latest
     commands:
       - echo "Test"
+
+  Show Env:
+    image: alpine:latest
+    commands:
+      - env
