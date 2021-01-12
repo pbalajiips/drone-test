@@ -1,12 +1,12 @@
 pipeline:
-  test:
+  Build:
     image: alpine:latest
     commands:
       - echo "Test"
 
-  Show Env:
+  Publish:
     image: alpine:latest
     commands:
-      - env
+      - echo "end of Build"
     secrets: [ docker_username, docker_password ]
     
