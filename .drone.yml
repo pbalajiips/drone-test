@@ -2,7 +2,7 @@ pipeline:
   Build:
     image: alpine:latest
     commands:
-      - echo "Test"
+      - echo "Test Message"
 
   Publish:
     image: alpine:latest
