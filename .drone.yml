@@ -10,7 +10,7 @@ pipeline:
       - echo "end of Build"
     secrets: [ docker_username, docker_password ]
 
-  Sonar:    
+ Sonar:    
 
   
   
