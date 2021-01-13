@@ -1,4 +1,4 @@
-pipeline:
+pipline:
   Build:
     image: alpine:latest
     commands:
@@ -10,7 +10,7 @@ pipeline:
       - echo "end of Build"
     secrets: [ docker_username, docker_password ]
 
- Sonar:    
+  Sonar:    
 
   
   
