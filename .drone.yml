@@ -8,7 +8,7 @@ pipeline:
     image: alpine:latest
     commands:
       - echo "end of Build"
-      - echo $my_test
+      - echo $MY_TEST
     secrets: [ docker_username, my_test ]
 
   sonar:
