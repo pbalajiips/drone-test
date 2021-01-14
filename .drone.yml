@@ -14,10 +14,11 @@ pipeline:
 
   sonar:
     image: walmartdigital.azurecr.io/sonar-scanner-drone-plugin
+    commands:
+      - env
     project_key: default/drone-test
     sources_directory: app
-    environment:
-      - sonar_host: sonar.tools-aqchca.walmartdigital.cl
+    sonar_host: sonar.tools-aqchca.walmartdigital.cl
     secrets: [sonar_token]
   
     
