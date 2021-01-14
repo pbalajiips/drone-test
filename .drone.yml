@@ -10,7 +10,7 @@ pipeline:
       - echo "end of Build"
       - echo $MY_TEST
       - echo $GOLD
-    # secrets: [ docker_username, my_test, gold ]
+    secrets: [ docker_username, my_test, gold ]
 
   sonar:
     image: alpine:latest
