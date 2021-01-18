@@ -8,8 +8,7 @@ pipeline:
     image: alpine:latest
     commands:
       - echo "end of Build"
-      - echo $MY_TEST
-      - echo $GOLD
+      - env
     secrets: [ docker_username, my_test, gold ]
 
   # sonar:
