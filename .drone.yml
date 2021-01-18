@@ -7,16 +7,16 @@ pipeline:
   Publish:
     image: alpine:latest
     commands:
-      - echo "Show env"
+      - echo "Show MY env"
       - env
     secrets: [ docker_username, my_test, gold ]
 
-  # sonar:
-  #   image: walmartdigital.azurecr.io/sonar-scanner-drone-plugin
-  #   project_key: default:dronetest
-  #   sources_directory: app
-  #   environment:
-  #     - SONAR_HOST=https://sonar.tools-aqchca.walmartdigital.cl
-  #   secrets: [sonar_token]
+  sonar:
+    image: walmartdigital.azurecr.io/sonar-scanner-drone-plugin
+    project_key: default:dronetest
+    sources_directory: app
+    environment:
+      - SONAR_HOST=https://sonar.tools-aqchca.walmartdigital.cl
+    secrets: [sonar_token]
   
     
