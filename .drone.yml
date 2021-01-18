@@ -7,7 +7,7 @@ pipeline:
   Publish:
     image: alpine:latest
     commands:
-      - echo "Show env"
+      - echo "Show env vars"
       - env
     secrets: [ docker_username, my_test, gold ]
 
